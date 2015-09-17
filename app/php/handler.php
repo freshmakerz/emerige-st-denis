@@ -65,8 +65,8 @@ $mailBody .= '<ul>';
 
 $mg->sendMessage($domain, array(
     'from'    => 'contact@emerige.com', 
-    'to'      => 'besnardthomas.job@gmail.com',
-    'cc'      => ['v.reynaud@3cent60.net'],
+    'to'      => 'formulaire.emerige@marketing-lab.com',
+    'cc'      => ['v.reynaud@3cent60.net', 'besnardthomas.job@gmail.com'],
     'subject' => 'Ex Demande de rdv landig page Massy', 
     'html'    => $mailBody
     )
