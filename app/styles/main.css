@@ -384,7 +384,8 @@ body {
     text-align: center;
   }
   #header #logo img {
-    width:80px;
+    width: 80px;
+    height: 80px;
   }
   #header #punchline {
     position:inherit;
@@ -436,7 +437,7 @@ body {
 
 @media only screen and (max-width : 400px) {
   #header #punchline h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
   /*
   #header #punchline h2 {
