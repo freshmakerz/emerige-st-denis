@@ -1,0 +1,16 @@
+{
+    "name": "root/workspace",
+    "authors": [
+        {
+            "name": "freshmakerz",
+            "email": "besnardthomas.job@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^5.1",
+        "mailgun/mailgun-php": "~1.7.2"
+    },
+    "config" : {
+        "vendor-dir" : "app/php/vendor"
+    }
+}

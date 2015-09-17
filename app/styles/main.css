@@ -1,0 +1,451 @@
+@font-face {
+  font-family: 'AvantGarde-Medium';
+  src: url('../fonts/AvantGarde-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvantGarde-Medium.otf')  format('opentype'),
+	     url('../fonts/AvantGarde-Medium.woff') format('woff'), url('../fonts/AvantGarde-Medium.ttf')  format('truetype'), url('../fonts/AvantGarde-Medium.svg#AvantGarde-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvantGarde-Bold';
+  src: url('../fonts/AvantGarde-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvantGarde-Bold.otf')  format('opentype'),
+	     url('../fonts/AvantGarde-Bold.woff') format('woff'), url('../fonts/AvantGarde-Bold.ttf')  format('truetype'), url('../fonts/AvantGarde-Bold.svg#AvantGarde-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvantGarde-ExtraLight';
+  src: url('../fonts/AvantGarde-ExtraLight.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvantGarde-ExtraLight.otf')  format('opentype'),
+	     url('../fonts/AvantGarde-ExtraLight.woff') format('woff'), url('../fonts/AvantGarde-ExtraLight.ttf')  format('truetype'), url('../fonts/AvantGarde-ExtraLight.svg#AvantGarde-ExtraLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvantGardeLT-Book';
+  src: url('../fonts/AvantGardeLT-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvantGardeLT-Book.woff') format('woff'), url('../fonts/AvantGardeLT-Book.ttf')  format('truetype'), url('../fonts/AvantGardeLT-Book.svg#AvantGardeLT-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color:#130c0d;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.container {
+  max-width: 960px;
+}
+
+#header {
+  background-color:#d90064;
+}
+
+#header .col-md-12 {
+  padding-right:0;
+}
+
+#header #punchline {
+  position:absolute;
+  top:15px;
+  right:15px;
+  z-index: 100;
+}
+
+#header #punchline h1 {
+  background-color:#fff;
+  font-size:28px;
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;  
+  text-transform:uppercase;
+  line-height:30px;
+  display: inline-block;
+  color:#d90064;
+  padding:15px;
+  margin:0;
+  float:right;
+}
+
+#header #punchline h1 span {
+  color:#130c0d;
+}
+
+.bxslider{
+  list-style:none;
+  overflow:hidden;
+}
+
+.bxslider img {
+  float:right;
+}
+.bx-wrapper{
+  border:none;
+  margin-bottom:0;
+  box-shadow: none;
+  background:transparent!important;
+  max-height:500px;
+  overflow:hidden;
+}
+
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next {
+  background: url('../images/controls.png') no-repeat top left;
+  width: 50px!important; 
+  height: 100px!important;
+  margin-top: -50px!important;
+}
+
+.bx-wrapper .bx-prev { 
+  display:none!important;
+} 
+
+.bx-wrapper .bx-next,
+.bx-wrapper .bx-next:hover, 
+.bx-wrapper .bx-next:focus{ 
+  background-position: -60px 0;
+  right:0!important;
+} 
+
+.bx-wrapper .bx-loading {
+  background: url('../images/bx_loader.gif') center center no-repeat;
+}
+
+/*
+#header #punchline h2 {
+  background: url(../images/cartidge.png) no-repeat;
+  float:right;
+  margin:0;
+  font-size:22px;
+  font-family: 'AvantGarde-ExtraLight', Helvetica,Arial;
+  text-transform:uppercase;
+  color:#fff;
+  background-size: 100% 100%;
+  width: 541px;
+  height: 46px;
+  text-align: right;
+  line-height: 46px;
+  padding: 0 15px;
+}
+
+#header #punchline h2 span {
+  color:#d90064;
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;  
+}
+
+#header #punchline h2 em {
+  font-size: x-small;
+  font-style:normal;
+  position: relative;
+  top: -10px;
+}
+
+#header #punchline h2 font {
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;    
+}
+*/
+
+#header #logo {
+  position: absolute;
+  z-index:100;
+  top: 50%;
+  margin-top: -66.5px;
+  left:47px;
+}
+
+#content {
+  padding-left: 40px;
+}
+
+#content .well {
+  background-color:#d1d1d1;
+  border:none;
+  box-shadow:none;
+  border-radius:0;
+  padding:15px;
+  margin-top: -130px;
+  text-align: center;
+  margin-bottom:0;
+}
+
+#content h3{
+  margin:15px 0 0;
+  font-family: 'AvantGarde-ExtraLight', Helvetica,Arial;
+  color:#130c0d;
+  font-size:18px;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+#content .radio-inline:first-child {
+  padding-left:0;  
+}
+
+#content h3 font {
+  color:#d90064;
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;
+  font-size:32px;
+}
+
+#content form input[type=text]{
+  border-radius:0;
+  height:40px;
+  box-shadow:none;
+}
+
+#content form .form-group {
+  margin-bottom: 3px;
+}
+
+#content form .form-control:focus {
+  border-color: #d90064;
+}
+
+#content form button {
+  border-radius:0;
+  background-color:#d90064;
+  border:none;
+  font-size:24px;
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;
+  text-transform:uppercase;
+  width: 185px;
+  margin: 20px auto 0;
+}
+
+#content form p {
+  font-family: 'Open Sans', sans-serif;
+  font-size:11px;
+  text-align:center;
+  margin:10px 0;
+}
+
+#content .description {
+  font-family: 'AvantGarde-Medium', Helvetica,Arial;
+  font-size:16px;
+  margin: 30px 0;
+}
+
+#content .infos {
+  font-size:28px;
+  text-transform:uppercase;
+  font-family: 'AvantGarde-ExtraLight', Helvetica,Arial;
+  line-height: 26px;
+  margin: 30px 0;
+}
+
+#content .city {
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;
+}
+
+#content .city span {
+  color:#d90064;
+}
+
+#content .logos {
+  margin: 8px 0px;
+}
+#content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+
+#content li {
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+  font-size:14px;
+  background: url(../images/puce.png) no-repeat left 5px;
+  padding: 3px 0px 3px 25px;
+  margin-bottom: 13px;
+}
+
+#content li:last-child {
+  margin-bottom:0;
+}
+
+#footer {
+  background-color:#eaeaea;
+}
+
+#footer p {
+  font-size:9px;
+  color:#888888;
+  padding-left: 25px;
+  margin:25px 0;
+  text-align: justify;
+}
+
+#footer #contact {
+  margin:25px 0;
+}
+
+#footer .brand-link {
+  font-family: 'AvantGarde-ExtraLight', Helvetica,Arial;
+  color:#d90064;
+  font-size:18px;
+  text-transform:uppercase;
+  float: right;
+}
+
+#footer .tel {
+  float: right;
+  margin: 10px 0;
+}
+
+.error{font-size: 12px; color: #a94442; font-style: italic;display: none;width:100%;text-align: left; }
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-title {
+  color:#d90064;
+}
+
+.modal-footer button,
+.modal-footer button:hover,
+.modal-footer button:active,
+.modal-footer button:focus,
+.modal-footer button:active:focus{
+  background-color:#d90064;
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;
+  text-transform:uppercase;
+  border-radius:0;
+  border:none;
+  outline:none;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  #header #slider {
+    float:none;
+  }
+  #content {
+    padding-left:15px;
+  }
+  #content #formWrapper {
+    padding-left:0;
+    padding-right:0;
+  }
+  #content .infos {
+    margin:20px 0;
+  }
+  #content .logos {
+    margin: 0 0px 20px;
+  }
+  #content .logos img{
+    margin: 0!important;
+  }
+  #content ul {
+    margin-bottom:20px;
+  }
+  #content .well {
+    margin-top:0;
+  }
+  #footer p {
+    padding-left:0;
+  }
+  #footer #contact {
+    margin:0;
+  }
+  #footer .brand-link {
+    float: left;
+    margin: 15px 0 0 -15px;
+  }
+  #footer .tel {
+    margin: 0 -15px 15px 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  #header .col-md-12 {
+    padding-left:0;
+  }
+  #header #logo {
+    position:inherit;
+    top:0;
+    left:0;
+    margin:auto;
+  }
+  #header #logo a {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+  }
+  #header #logo img {
+    width:80px;
+  }
+  #header #punchline {
+    position:inherit;
+    top:0;
+    right:0;
+  }
+  #header #punchline h1 {
+    float:none;
+    width: 100%;
+    text-align:center;
+  }
+  /*
+  #header #punchline h2 {
+    float:none;
+    background:#262023;
+    width: 100%;
+    text-align:center;
+  }
+  */
+  #footer .tel,
+  #footer .brand-link {
+    float:none;
+  }
+  #footer #contact > div {
+    text-align:center;
+  }
+  #footer .tel {
+    margin: 0 auto 15px;
+  }
+}
+
+@media only screen and (max-width : 520px) {
+  
+  /*
+  #header #punchline h2 {
+   font-size:20px; 
+  }
+  */
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  /*
+  #header #punchline h2 {
+   font-size:16px; 
+  }
+  */
+}
+
+@media only screen and (max-width : 400px) {
+  #header #punchline h1 {
+    font-size: 22px;
+  }
+  /*
+  #header #punchline h2 {
+   font-size:12px; 
+  }
+  */
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
