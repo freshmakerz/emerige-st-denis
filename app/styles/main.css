@@ -186,7 +186,7 @@ body {
   padding-left:0;  
 }
 
-#content h3 font {
+#content h3 span {
   color:#d90064;
   font-family: 'AvantGarde-Bold', Helvetica,Arial;
   font-size:32px;

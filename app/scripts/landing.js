@@ -120,7 +120,10 @@ $.landing = {
     placeholder: {},
     bxslider: {
       pager: false,
-      infiniteLoop: true
+      auto: true,
+      infiniteLoop: true,
+      autoStart: true,
+      autoControls: true
     }
   }
 };
