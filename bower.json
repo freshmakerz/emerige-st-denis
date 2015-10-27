@@ -4,6 +4,8 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "bxslider-4": "~4.2.5",
+    "ekko-lightbox": "https://github.com/ashleydw/lightbox.git#~3.3.3",
+    "font-awesome": "fontawesome#~4.4.0",
     "iCheck": "~1.0.2",
     "jquery": "~1.11.2",
     "jquery-migrate": "~1.2.1",

@@ -4,7 +4,7 @@
 
 $.landing = {
   env: null,
-  devUrl: 'http://emerige-massy-freshmakerz-1.c9.io',
+  devUrl: 'http://emerige-saint-denis-freshmakerz.c9.io',
   submitType: 'AJAX',
   submitUrl: {
     DEV: '../app/php/handler.php',
@@ -17,6 +17,16 @@ $.landing = {
   callback: 'popup',
   redirectUrl: '/confirmation',
   fields: {
+    souhait: {
+      element: 'input[name="souhait"]',
+      name: 'Souhait',
+      value: 'brochure',
+      defaultValue: 'brochure',
+      type: 'radio',
+      validations: [
+        'required',
+      ]
+    },
     civilite: {
       element: 'input[name="civilite"]',
       name: 'Civilité',
@@ -75,6 +85,18 @@ $.landing = {
         'max|25'
       ]
     },
+    adresse: {
+      element: '#adresse',
+      name: 'Adresse',
+      value: null,
+      defaultValue: null,
+      type: 'text',
+      validations: [
+        //'required',
+        //'regex|alphaNum',
+        //'max|250'
+      ]
+    },
     cp: {
       element: '#cp',
       name: 'Code postal',
@@ -86,6 +108,17 @@ $.landing = {
         'regex|cp'
       ]
     },
+    ville: {
+      element: '#ville',
+      name: 'Ville',
+      value: null,
+      defaultValue: null,
+      type: 'text',
+      validations: [
+        'required',
+        'regex|alpha'
+      ]
+    },
     optin: {
       element: 'input[name="optin"]',
       name: 'Optin',
@@ -94,6 +127,16 @@ $.landing = {
       type: 'radio',
       validations: [
         'required',
+      ]
+    },
+    'recherche[]': {
+      element: 'input[name="recherche[]"]',
+      name: 'Recherche',
+      value: [],
+      defaultValue: null,
+      type: 'checkbox',
+      validations: [
+      
       ]
     },
     projet: {

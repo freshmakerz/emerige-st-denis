@@ -98,7 +98,10 @@ gulp.task('images_vendor', function () {
 });
 
 gulp.task('php_files', function () {
-  return gulp.src('app/php/handler.php')
+  return gulp.src([
+    'app/php/handler.php',
+    'app/php/email.html'
+  ])
   .pipe(gulp.dest('dist/php'));
 });
 

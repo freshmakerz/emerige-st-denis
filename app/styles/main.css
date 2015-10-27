@@ -42,6 +42,8 @@ body {
 
 .container {
   max-width: 960px;
+  padding:0;
+  margin:0 auto;
 }
 
 #header {
@@ -59,6 +61,23 @@ body {
   z-index: 100;
 }
 
+#header #btn-decouvrir {
+  position:absolute;
+  top:465px;
+  left:50%;
+  margin-left:-200px;
+  width:400px;
+  z-index: 100;
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;
+  color: #FFFFFF;
+  font-size:20px;
+  padding: 10px 30px;
+  background:#C80069;
+  border: 8px solid #FFFFFF;
+  text-align:center;
+  text-transform:uppercase;
+}
+
 #header #punchline h1 {
   background-color:#fff;
   font-size:28px;
@@ -74,6 +93,23 @@ body {
 
 #header #punchline h1 span {
   color:#130c0d;
+}
+
+#header #punchline h2 {
+  background: url(../images/cartidge.png) no-repeat;
+  float: right;
+  margin: 0;
+  font-size: 22px;
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;  
+  text-transform: uppercase;
+  color: #fff;
+  background-size: 391px 46px;
+  width: 541px;
+  height: 46px;
+  text-align: right;
+  line-height: 46px;
+  padding: 0 15px;
+  background-position: right center;
 }
 
 .bxslider{
@@ -116,40 +152,6 @@ body {
   background: url('../images/bx_loader.gif') center center no-repeat;
 }
 
-/*
-#header #punchline h2 {
-  background: url(../images/cartidge.png) no-repeat;
-  float:right;
-  margin:0;
-  font-size:22px;
-  font-family: 'AvantGarde-ExtraLight', Helvetica,Arial;
-  text-transform:uppercase;
-  color:#fff;
-  background-size: 100% 100%;
-  width: 541px;
-  height: 46px;
-  text-align: right;
-  line-height: 46px;
-  padding: 0 15px;
-}
-
-#header #punchline h2 span {
-  color:#d90064;
-  font-family: 'AvantGarde-Bold', Helvetica,Arial;  
-}
-
-#header #punchline h2 em {
-  font-size: x-small;
-  font-style:normal;
-  position: relative;
-  top: -10px;
-}
-
-#header #punchline h2 font {
-  font-family: 'AvantGarde-Bold', Helvetica,Arial;    
-}
-*/
-
 #header #logo {
   position: absolute;
   z-index:100;
@@ -159,7 +161,8 @@ body {
 }
 
 #content {
-  padding-left: 40px;
+  margin:0 auto!important;
+  padding:0!important;
 }
 
 #content .well {
@@ -167,10 +170,36 @@ body {
   border:none;
   box-shadow:none;
   border-radius:0;
-  padding:15px;
-  margin-top: -130px;
+  padding:30px 0;
+  margin:0 auto;
   text-align: center;
-  margin-bottom:0;
+  width:100%;
+}
+
+#content .map {
+  background-color:#c80069;
+  padding:15px 0 30px;
+  margin:0;
+  text-align:center;
+  color:#FFFFFF;
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+  font-size:14px;
+  width:100%;
+}
+
+#content .title-map {
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;
+  font-size:32px;
+  text-transform:uppercase;
+}
+
+#content h2{
+  margin:15px 0 0;
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;
+  color:#000000;
+  font-size:28px;
+  text-transform:uppercase;
+  text-align:center;
 }
 
 #content h3{
@@ -182,8 +211,19 @@ body {
   text-align:center;
 }
 
-#content .radio-inline:first-child {
+#content .checkbox-inline:first-child, #content .checkbox-inline {
   padding-left:0;  
+}
+
+
+#content .radio-inline:first-child, #content .radio-inline {
+  padding-left:0;  
+}
+
+#content .radio-inline, .checkbox-inline + .checkbox-inline {
+    margin-top: 0;
+    margin-left: 0!important;
+    margin-right:10px!important;
 }
 
 #content h3 span {
@@ -217,6 +257,20 @@ body {
   margin: 20px auto 0;
 }
 
+#content form .weight {
+  display:block;
+  text-align:left;
+  text-transform:uppercase;
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;
+  font-size:14px;
+}
+
+#content form .formSeparator {
+  margin:30px 20px;
+  height:1px;
+  background:#FFFFFF;
+}
+
 #content form p {
   font-family: 'Open Sans', sans-serif;
   font-size:11px;
@@ -224,18 +278,32 @@ body {
   margin:10px 0;
 }
 
+#content form .fa-times{
+  display:none;
+  color: #A94446;
+  position: relative;
+  top: 2px;
+  left: -5px;
+}
+
 #content .description {
-  font-family: 'AvantGarde-Medium', Helvetica,Arial;
-  font-size:16px;
-  margin: 30px 0;
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+  font-size:15px;
+  margin: 0 0 30px;
+}
+
+#content .pers {
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+  font-size:14px;
+  margin: 10px 0 30px;
 }
 
 #content .infos {
-  font-size:28px;
+  font-size:46px;
   text-transform:uppercase;
   font-family: 'AvantGarde-ExtraLight', Helvetica,Arial;
-  line-height: 26px;
-  margin: 30px 0;
+  line-height: 46px;
+  margin: 77px 0 30px;
 }
 
 #content .city {
@@ -247,8 +315,21 @@ body {
 }
 
 #content .logos {
-  margin: 8px 0px;
+  position:absolute;
+  top:-200px;
+  right:20px;
+  margin: 20px 20px 20px 0;
 }
+#content .zoom {
+  background:url(../images/zoom.png) bottom right no-repeat;
+  width:270px;
+  height:136px;
+  position:absolute;
+  z-index:10;
+  top:26px;
+  right:50px;
+}
+
 #content ul {
   list-style: none;
   padding-left: 0;
@@ -257,18 +338,117 @@ body {
 
 #content li {
   font-family: 'AvantGardeLT-Book', Helvetica,Arial;
-  font-size:14px;
-  background: url(../images/puce.png) no-repeat left 5px;
-  padding: 3px 0px 3px 25px;
-  margin-bottom: 13px;
+  font-size:15px;
+  padding: 3px 0px 3px 10px;
+  list-style:none;
+}
+
+#content li:before {
+    content: "■ ";
+    color: #C80069; /* or whatever color you prefer */
 }
 
 #content li:last-child {
   margin-bottom:0;
 }
 
+#content .title {
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+  font-size:20px;
+  font-weight:bold;
+}
+
+#content .separateur {
+  height:4px;
+  background:#c80069;
+  margin:10px 0 30px;
+}
+
+#content .prices {
+  background-color:#FFFFFF;
+  padding:15px 0 30px;
+  margin:20px 0;
+  text-align:center;
+}
+
+#content .title-tab {
+  font-size:18px;
+  text-transform:uppercase;
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+  line-height: 50px;
+}
+
+#content .text-tab {
+  font-size:14px;
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+}
+
+#content .line-tab {
+  margin-top:16px;
+}
+
+#content .line-tab-prix {
+  margin-top:9px;
+}
+
+#content .prix-tab {
+  font-size:18px;
+  line-height:36px;
+  text-transform:uppercase;
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+}
+
+#content .prix-tab-pink {
+  font-size:18px;
+  color:#FFFFFF;
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+  line-height: 50px;
+  background:#c80069;
+}
+
+#content .pink {
+  color:#c80069;
+}
+
+#content .sep-tab {
+  background:#000000;
+  height:1px;
+  margin:0;
+}
+
+#content .mention-tab {
+  font-size:12px;
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+  line-height: 30px;
+  margin-bottom:30px;
+}
+
+#content #btn-contact {
+  font-family: 'AvantGarde-Bold', Helvetica,Arial;
+  color: #FFFFFF;
+  font-size:20px;
+  padding: 20px 30px;
+  background:#C80069;
+  border: 8px solid #FFFFFF;
+  text-align:center;
+  text-transform:uppercase;
+  width:300px;
+  margin:0 auto;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  z-index:200!important;
+}
+
+.row {
+  padding:0;
+  margin:0 auto;
+}
+
 #footer {
   background-color:#eaeaea;
+  padding:0;
+  margin:0 auto;
 }
 
 #footer p {
@@ -339,6 +519,9 @@ body {
   #content .infos {
     margin:20px 0;
   }
+  #content .description {
+    margin: 15px 0 30px 0;
+  }
   #content .logos {
     margin: 0 0px 20px;
   }
@@ -350,6 +533,7 @@ body {
   }
   #content .well {
     margin-top:0;
+    margin-bottom:0;
   }
   #footer p {
     padding-left:0;
@@ -397,14 +581,12 @@ body {
     width: 100%;
     text-align:center;
   }
-  /*
   #header #punchline h2 {
     float:none;
     background:#262023;
     width: 100%;
     text-align:center;
   }
-  */
   #footer .tel,
   #footer .brand-link {
     float:none;
@@ -415,38 +597,167 @@ body {
   #footer .tel {
     margin: 0 auto 15px;
   }
+  
+  #content .zoom {
+    right:270px;
+  }
+  
+  #content .infos {
+    margin:70px 0 30px!important;
+  }
+  
+  #header #btn-decouvrir {
+    top:550px!important;
+  }
+  
+  #content .logos {
+    top:-180px!important;
+  }
 }
 
 @media only screen and (max-width : 520px) {
-  
-  /*
-  #header #punchline h2 {
-   font-size:20px; 
-  }
-  */
+
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-  /*
-  #header #punchline h2 {
-   font-size:16px; 
-  }
-  */
+
 }
 
 @media only screen and (max-width : 400px) {
   #header #punchline h1 {
     font-size: 20px;
   }
-  /*
-  #header #punchline h2 {
-   font-size:12px; 
+  #header #btn-decouvrir {
+    top:365px!important;
+    left:50%;
+    margin-left:-120px;
+    width:240px;
+    font-size:16px;
+    padding: 10px;
   }
-  */
+  
+  #content .infos {
+    font-size:46px;
+    text-transform:uppercase;
+    font-family: 'AvantGarde-ExtraLight', Helvetica,Arial;
+    line-height: 46px;
+    margin: 150px 0 30px!important;
+  }
+  
+  #header #punchline h2 {
+    margin: 0;
+    font-size: 18px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    padding: 0 15px;
+    background:#000000;
+  }
+  
+  #content .logos {
+    position:absolute;
+    top:-350px!important;
+    right:20px;
+    margin: 20px 20px 20px 0;
+  }
+  
+  #content .title-map {
+    font-size:24px;
+  }
+  
+  #content .well {
+    padding-left:10px;
+    padding-right:10px;
+    margin:0 auto;
+  }
+  
+  #content #btn-contact {
+    width:240px;
+    font-size:16px;
+  }
+  
+  .container {
+    margin:0 auto;
+    padding:0;
+  }
+  
+  .bx-wrapper {
+    width:320px;
+  }
+  
+  #content .zoom {
+    right:50px;
+  }
+  
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
-
+  #header #punchline h1 {
+    font-size: 20px;
+  }
+  #header #btn-decouvrir {
+    top:365px!important;
+    left:50%;
+    margin-left:-120px;
+    width:240px;
+    font-size:16px;
+    padding: 10px;
+  }
+  
+  #content .infos {
+    font-size:46px;
+    text-transform:uppercase;
+    font-family: 'AvantGarde-ExtraLight', Helvetica,Arial;
+    line-height: 46px;
+    margin: 150px 0 30px!important;
+  }
+  
+  #header #punchline h2 {
+    margin: 0;
+    font-size: 18px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    padding: 0 15px;
+    background:#000000;
+  }
+  
+  #content .logos {
+    position:absolute;
+    top:-350px!important;
+    right:20px;
+    margin: 20px 20px 20px 0;
+  }
+  
+  #content .title-map {
+    font-size:24px;
+  }
+  
+  #content .well {
+    padding-left:10px;
+    padding-right:10px;
+    margin:0 auto;
+  }
+  
+  #content #btn-contact {
+    width:240px;
+    font-size:16px;
+  }
+  
+  .container {
+    margin:0 auto;
+    padding:0;
+  }
+  
+  .bx-wrapper {
+    width:320px;
+  }
+  
+  #content .zoom {
+    right:50px;
+  }
 }

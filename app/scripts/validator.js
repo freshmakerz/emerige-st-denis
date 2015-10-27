@@ -44,19 +44,13 @@ $.validator = {
     }
     if(landing.errors.displayMsg === true){
       if(type === 'radio'){
-        $(el).parent().next().text(this.parseRuleMsg(field, err, param)).show();
+        $(el).parent().parent().parent().children('i.fa-times').fadeIn();
       }else if(type === 'checkbox'){
-        //$(el).parent().parent().next().text(this.parseRuleMsg(field, err, param)).show();
+
       }else{
         $(el).next().text(this.parseRuleMsg(field, err, param)).show();
       }
     }
-    /* BUG
-    ******
-    if(landing.errors.displayTootltip === true){
-      $(el).next().tooltip({title: this.parseRuleMsg(field, err, param)}).show();
-    }
-    *****/
   },
   
   // Display field error (@el, @err)
@@ -66,18 +60,12 @@ $.validator = {
     }
     if(landing.errors.displayMsg === true){
       if(type === 'radio'){
-        $(el).parent().next().text('').hide();
+        $(el).parent().parent().parent().children('i.fa-times').fadeOut();
       }else if(type === 'checkbox'){
       }else{
         $(el).next().text('').hide();
       }
     }
-    /* BUG
-    ******
-    if(landing.errors.displayTootltip === true){
-      $(el).next().hide().tooltip('destroy');
-    }
-    *****/
   },
   
 };
