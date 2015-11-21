@@ -378,6 +378,14 @@ body {
   line-height: 50px;
 }
 
+#content .title-tab-end {
+  font-size:18px;
+  text-transform:uppercase;
+  font-family: 'AvantGardeLT-Book', Helvetica,Arial;
+  line-height: 50px;
+  padding:0!important;
+}
+
 #content .text-tab {
   font-size:14px;
   font-family: 'AvantGardeLT-Book', Helvetica,Arial;

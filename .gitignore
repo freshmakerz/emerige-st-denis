@@ -5,3 +5,5 @@ dist
 bower_components
 test/bower_components
 credentials.json
+app/php/vendor
+app/php/handler.php

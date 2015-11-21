@@ -106,19 +106,19 @@ $.core = {
       
     }
     if(landing.trackFormSuccess){
-      //this.changeAnalyticTag();
+      this.addAdwordsTracking();
     }
     this.clearForm();
   },
   
-  changeAnalyticTag: function(){
-    console.log('Add tracking for success form');
+  addAdwordsTracking: function(){
+    console.log('Adwords hit !');
     window.google_trackConversion({
-      google_conversion_id: 948606852,
+      google_conversion_id: 941094471,
       google_conversion_language: 'en',
       google_conversion_format: '3',
       google_conversion_color: 'ffffff',
-      google_conversion_label: 'gj4xCK6l7VoQhK',
+      google_conversion_label: 'XffsCNCl9GAQx-zfwAM',
       google_remarketing_only: false
     });
   },
